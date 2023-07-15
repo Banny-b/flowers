@@ -1,0 +1,95 @@
+.footer {
+    padding: 20px 10px 10px 10px;
+    background: whitesmoke;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 178px;
+    height: 82px;
+}
+
+.footer__contact-title {
+    font-family: var(--accent-font);
+    font-style: normal;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.footer__contact-link {
+    font-family: var(--accent-font);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    transition: var(--transition-function);
+}
+
+.footer__contact-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer__contact-icon {
+    vertical-align: middle;
+    fill: var(--text-color);
+    transition: var(--transition-function);
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.footer__contact-link:hover .footer__contact-icon,
+.footer__contact-link:hover {
+    fill: red;
+    color: red;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__social-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer__social-icon {
+    transition: transform var(--transition-function);
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.instag {
+    fill: palevioletred;
+}
+
+.faceb {
+    fill: blue;
+}
+
+.teleg {
+    fill: lightskyblue;
+}
+
+.whats {
+    fill: green;
+}
+
+.footer-copyright {
+    font-family: var(--accent-font);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 20px;
+    padding: 20px 0 1px 0;
+    border-top: 1px solid #969696;
+}

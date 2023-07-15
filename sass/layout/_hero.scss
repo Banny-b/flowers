@@ -1,0 +1,61 @@
+.hero {
+    display: flex;
+    height: 500px;
+    background-image: url("../../img/bg/hero-bg-no-focus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__img {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+}
+
+.hero__sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 60px;
+    margin-left: 470px;
+}
+
+.hero__title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: rgb(123, 59, 224);
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.hero__text {
+    text-align: center;
+    font-family: var(--accent-font);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px white;
+}
+
+.hero_btn {
+    font-family: var(--accent-font);
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background: #4e4efc;
+    border: 2px solid white;
+    border-radius: 40px;
+    transition: var(--transition-function);
+
+    &:hover {
+        background: blue;
+    }
+}
