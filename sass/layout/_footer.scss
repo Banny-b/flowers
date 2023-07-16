@@ -1,6 +1,6 @@
 .footer {
     padding: 20px 10px 10px 10px;
-    background: whitesmoke;
+    background: var(--bg-footer-color);
 }
 
 .footer-wrapper {
@@ -12,6 +12,11 @@
 .footer__logo {
     width: 178px;
     height: 82px;
+    transition: transform var(--transition-function);
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .footer__contact-title {
@@ -47,8 +52,8 @@
 
 .footer__contact-link:hover .footer__contact-icon,
 .footer__contact-link:hover {
-    fill: red;
-    color: red;
+    fill: var(--link-hover-color);
+    color: var(--link-hover-color);
 }
 
 .footer__social-list {
@@ -68,19 +73,19 @@
 }
 
 .instag {
-    fill: palevioletred;
+    fill: var(--instag-color);
 }
 
 .faceb {
-    fill: blue;
+    fill: var(--faceb-color);
 }
 
 .teleg {
-    fill: lightskyblue;
+    fill: var(--teleg-color);
 }
 
 .whats {
-    fill: green;
+    fill: var(--whats-color);
 }
 
 .footer-copyright {
@@ -91,5 +96,5 @@
     color: var(--text-color);
     margin-top: 20px;
     padding: 20px 0 1px 0;
-    border-top: 1px solid #969696;
+    border-top: 1px solid var(--copyr-color);
 }

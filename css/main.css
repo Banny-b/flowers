@@ -65,22 +65,27 @@ button {
 }
 :root {
   --accent-font: "Roboto", sans-serif;
-  --accent-color: #34547A;
+  --main-color: #0101e6;
   --black-color: #000000;
-  --bg-section-color: #EEEFF1;
-  --bg-section-color-two: #E5E5E5;
+  --bg-footer-color: #EEEFF1;
+  --copyr-color: #969696;
   --bg-overlay: rgba(134, 137, 139, 0.8);
+  --link-hover-color: #ff0000;
   --text-color: #585858;
-  --placeholder-color: #5F5D5D;
+  --element-color: #7b3be0;
   --white-color: #FFFFFF;
   --transition-function: 350ms ease-out;
+  --instag-color: #d87093;
+  --faceb-color: #0000a3;
+  --teleg-color: #3fb4fd;
+  --whats-color: #03a003;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: var(--white-color);
 }
 
 .header__logo {
@@ -93,7 +98,7 @@ button {
 
 .header__nav-link {
   display: inline-block;
-  color: blue;
+  color: var(--main-color);
   transition: transform var(--transition-function);
 }
 
@@ -103,7 +108,7 @@ button {
 
 .header__nav-icon {
   vertical-align: middle;
-  fill: blue;
+  fill: var(--main-color);
 }
 .header__nav-icon:not(:last-child) {
   margin-right: 8px;
@@ -111,16 +116,16 @@ button {
 
 .header__nav-link:hover .header__nav-icon,
 .header__nav-link:hover {
-  fill: red;
-  color: red;
+  fill: var(--link-hover-color);
+  color: var(--link-hover-color);
   transform: scale(1.04);
 }
 
 .header__button-lang {
   width: 30px;
   height: 25px;
-  color: blue;
-  border: 1px solid blue;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
   border-radius: 3px;
   background: transparent;
   padding: 1px 3px;
@@ -130,14 +135,14 @@ button {
   margin-right: 1px;
 }
 .header__button-lang:hover {
-  color: red;
-  border-color: red;
+  color: var(--link-hover-color);
+  border-color: var(--link-hover-color);
   transform: scale(1.04);
 }
 
 .header__button-lang:active {
-  color: white;
-  background-color: blue;
+  color: var(--white-color);
+  background-color: var(--main-color);
   border-color: transparent;
 }
 
@@ -170,7 +175,7 @@ button {
   display: block;
   width: 100px;
   height: 2px;
-  background-color: rgb(123, 59, 224);
+  background-color: var(--element-color);
   margin-top: 50px;
   margin-bottom: 80px;
 }
@@ -184,7 +189,7 @@ button {
   padding: 20px 30px;
   margin-bottom: 50px;
   border-radius: 20px;
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 20px var(--white-color);
 }
 
 .hero_btn {
@@ -192,14 +197,14 @@ button {
   width: 150px;
   height: 50px;
   text-align: center;
-  color: white;
-  background: #4e4efc;
-  border: 2px solid white;
+  color: var(--white-color);
+  background: var(--element-color);
+  border: 2px solid var(--white-color);
   border-radius: 40px;
   transition: var(--transition-function);
 }
 .hero_btn:hover {
-  background: blue;
+  background: var(--faceb-color);
 }
 
 .catalog {
@@ -215,9 +220,10 @@ button {
 
 .catalog__title {
   text-align: center;
-  font-family: var(--catalog-font);
+  font-family: var(--accent-font);
   font-weight: 500;
-  color: var(--text-color);
+  letter-spacing: 4px;
+  color: var(--black-color);
   margin-bottom: 20px;
 }
 
@@ -262,7 +268,7 @@ button {
 
 .footer {
   padding: 20px 10px 10px 10px;
-  background: whitesmoke;
+  background: var(--bg-footer-color);
 }
 
 .footer-wrapper {
@@ -274,6 +280,10 @@ button {
 .footer__logo {
   width: 178px;
   height: 82px;
+  transition: transform var(--transition-function);
+}
+.footer__logo:hover {
+  transform: scale(1.1);
 }
 
 .footer__contact-title {
@@ -308,8 +318,8 @@ button {
 
 .footer__contact-link:hover .footer__contact-icon,
 .footer__contact-link:hover {
-  fill: red;
-  color: red;
+  fill: var(--link-hover-color);
+  color: var(--link-hover-color);
 }
 
 .footer__social-list {
@@ -328,19 +338,19 @@ button {
 }
 
 .instag {
-  fill: palevioletred;
+  fill: var(--instag-color);
 }
 
 .faceb {
-  fill: blue;
+  fill: var(--faceb-color);
 }
 
 .teleg {
-  fill: lightskyblue;
+  fill: var(--teleg-color);
 }
 
 .whats {
-  fill: green;
+  fill: var(--whats-color);
 }
 
 .footer-copyright {
@@ -351,7 +361,7 @@ button {
   color: var(--text-color);
   margin-top: 20px;
   padding: 20px 0 1px 0;
-  border-top: 1px solid #969696;
+  border-top: 1px solid var(--copyr-color);
 }
 
 #btnScrollToTop {
@@ -363,7 +373,7 @@ button {
   font-size: 28px;
   border: none;
   outline: none;
-  background-color: var(--bg-overlay);
+  background-color: var(--copyr-color);
   color: var(--white-color);
   cursor: pointer;
   padding: 8px 13px;
@@ -371,5 +381,5 @@ button {
   transition: var(--function-transition);
 }
 #btnScrollToTop:hover {
-  background-color: var(--placeholder-color);
+  background-color: var(--text-color);
 }/*# sourceMappingURL=main.css.map */

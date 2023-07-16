@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: var(--white-color);
 }
 
 .header__logo {
@@ -15,7 +15,7 @@
 
 .header__nav-link {
     display: inline-block;
-    color: blue;
+    color: var(--main-color);
     transition: transform var(--transition-function);
 }
 
@@ -25,7 +25,7 @@
 
 .header__nav-icon {
     vertical-align: middle;
-    fill: blue;
+    fill: var(--main-color);
 
     &:not(:last-child) {
         margin-right: 8px;
@@ -34,16 +34,16 @@
 
 .header__nav-link:hover .header__nav-icon,
 .header__nav-link:hover {
-    fill: red;
-    color: red;
+    fill: var(--link-hover-color);
+    color: var(--link-hover-color);
     transform: scale(1.04);
 }
 
 .header__button-lang {
     width: 30px;
     height: 25px;
-    color: blue;
-    border: 1px solid blue;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 3px;
     background: transparent;
     padding: 1px 3px;
@@ -54,14 +54,14 @@
     }
 
     &:hover {
-        color: red;
-        border-color: red;
+        color: var(--link-hover-color);
+        border-color: var(--link-hover-color);
         transform: scale(1.04);
     }
 }
 
 .header__button-lang:active {
-    color: white;
-    background-color: blue;
+    color: var(--white-color);
+    background-color: var(--main-color);
     border-color: transparent;
 }

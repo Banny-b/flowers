@@ -11,9 +11,10 @@
 
 .catalog__title {
     text-align: center;
-    font-family: var(--catalog-font);
+    font-family: var(--accent-font);
     font-weight: 500;
-    color: var(--text-color);
+    letter-spacing: 4px;
+    color: var(--black-color);
     margin-bottom: 20px;
 }
 
