@@ -39,29 +39,8 @@
     transform: scale(1.04);
 }
 
-.header__button-lang {
-    width: 30px;
-    height: 25px;
+.change-lang {
     color: var(--main-color);
-    border: 1px solid var(--main-color);
-    border-radius: 3px;
-    background: transparent;
-    padding: 1px 3px;
-    transition: transform var(--transition-function);
-
-    &:not(:last-child) {
-        margin-right: 1px;
-    }
-
-    &:hover {
-        color: var(--link-hover-color);
-        border-color: var(--link-hover-color);
-        transform: scale(1.04);
-    }
-}
-
-.header__button-lang:active {
-    color: var(--white-color);
-    background-color: var(--main-color);
-    border-color: transparent;
+    border-color: var(--main-color);
+    border-radius: 2px;
 }

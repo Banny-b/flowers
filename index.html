@@ -27,8 +27,10 @@
                 </svg>
                 <span class="header__nav-item">+38 068 069 71 48</span>
             </a>
-            <button class="header__button-lang">ua</button>
-            <button class="header__button-lang">ru</button>
+            <select class="change-lang">
+                <option value="ua">ua</option>
+                <option value="ru">ru</option>
+            </select>
         </nav>
     </header>
     <!-- Hero -->
@@ -40,11 +42,11 @@
                 та догляду за голоксініями. В цьому каталозі ви можете ознайомитись з моїми квітами, які я власноруч 
                 вирастила, та зробити замовлення.
             </p>
-            <button class="hero_btn">Замовити</button>
+            <button class="hero_btn" data-modal-open>Замовити</button>
         </div>
     </section>
     <!-- Catalog -->
-    <section class="catalog container">
+    <!-- <section class="catalog container">
         <h2 class="catalog__title">Мої квіти</h2>
         <ul class="catalog__list list">
             <li class="catalog__item">
@@ -511,9 +513,9 @@
                     </a>
                 </div>
             </li>
-            <!-- Next image -->
+            
         </ul>
-    </section>
+    </section> -->
     <!-- Footer -->
     <section class="footer container">
         <div class="footer-wrapper">
@@ -584,7 +586,76 @@
         </div>
         <p class="footer-copyright">© 2023 Created by Serhii Petukhov</p>
     </section>
+    <!-- Modal window -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="form__container">
+        <button type="button" class="form__modal-close-btn" data-modal-close>
+            <svg class="form__modal-close-icon" width="18" height="18">
+                <use href="./img/icons/form.svg#icon-close-modal"></use>
+            </svg>
+        </button>
+        <h2 class="form__title">Бажаєте замовити?</h2>
+        <p class="form__text">Залиште свої данні.</p>
+        <form class="form__field" action="sender.php" method="post">
+            <label class="form__field-item" for="name">
+                <span class="form__field-descrip">Ім'я</span>
+                <span class="form__field-item-wrapper">
+                <input 
+                class="form__field-input name" 
+                type="text" 
+                id="name" 
+                name="name"
+                required
+                />
+                <svg class="form__field-icon" width="20" height="20">
+                    <use href="./img/icons/form.svg#icon-person"></use>
+                </svg>
+                </span>
+            </label>
+            <label class="form__field-item" for="phone">
+                <span class="form__field-descrip">Телефон</span>
+                <span class="form__field-item-wrapper">
+                <input 
+                class="form__field-input phone" 
+                type="tel" 
+                id="phone" 
+                name="phone"
+                required
+                />
+                <svg class="form__field-icon" width="20" height="20">
+                    <use href="./img/icons/form.svg#icon-phone"></use>
+                </svg>
+                </span>
+            </label>
+            <label class="form__field-item" for="email">
+                <span class="form__field-descrip">Пошта</span>
+                <span class="form__field-item-wrapper">
+                <input 
+                class="form__field-input" 
+                type="email" 
+                id="email" 
+                name="email"
+                required
+                />
+                <svg class="form__field-icon" width="20" height="20">
+                    <use href="./img/icons/form.svg#icon-email"></use>
+                </svg>
+                </span>
+            </label>
+            <label class="form__field-item" for="message">
+                <span class="form__field-descrip">Повідомлення</span>
+                <textarea class="form__field-message" id="message" name="message"></textarea>
+            </label>
+                <button class="form__button" type="button">Відправити</button>
+                <div class="status"></div>
+        </form>
+    </div>
+</div>
     <button onclick="scrollToTop()" id="btnScrollToTop">🡅</button>
     <script src="./js/topButton.js"></script>
+    <script src="./js/modalWin.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

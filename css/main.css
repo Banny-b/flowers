@@ -121,29 +121,10 @@ button {
   transform: scale(1.04);
 }
 
-.header__button-lang {
-  width: 30px;
-  height: 25px;
+.change-lang {
   color: var(--main-color);
-  border: 1px solid var(--main-color);
-  border-radius: 3px;
-  background: transparent;
-  padding: 1px 3px;
-  transition: transform var(--transition-function);
-}
-.header__button-lang:not(:last-child) {
-  margin-right: 1px;
-}
-.header__button-lang:hover {
-  color: var(--link-hover-color);
-  border-color: var(--link-hover-color);
-  transform: scale(1.04);
-}
-
-.header__button-lang:active {
-  color: var(--white-color);
-  background-color: var(--main-color);
-  border-color: transparent;
+  border-color: var(--main-color);
+  border-radius: 2px;
 }
 
 .hero {
@@ -362,6 +343,129 @@ button {
   margin-top: 20px;
   padding: 20px 0 1px 0;
   border-top: 1px solid var(--copyr-color);
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity var(--transition-function), visibility var(--transition-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.form__container {
+  width: 500px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.form__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__field-item {
+  margin-bottom: 15px;
+}
+
+.form__field-descrip {
+  display: block;
+}
+
+.form__field-item-wrapper {
+  display: block;
+  position: relative;
+}
+
+.form__field-icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+.form__field-input {
+  width: 260px;
+  padding: 5px 8px 5px 30px;
+  box-sizing: border-box;
+}
+
+form input.error {
+  border-color: red;
+  box-shadow: 0 0 5px red;
+}
+
+label.error {
+  display: none !important;
+}
+
+.form__field-message {
+  width: 260px;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.form__button {
+  width: 120px;
+  padding: 5px;
+}
+
+.form__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
+  padding: 40px;
+}
+
+.form__modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: color var(--transition-function);
+}
+.form__modal-close-btn:hover, .form__modal-close-btn:focus {
+  border-color: var(--link-hover-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  /*outline: none;*/
+}
+.form__modal-close-btn:hover .form__modal-close-icon, .form__modal-close-btn:focus .form__modal-close-icon {
+  fill: var(--link-hover-color);
 }
 
 #btnScrollToTop {
