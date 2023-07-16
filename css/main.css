@@ -74,11 +74,11 @@ button {
   --text-color: #585858;
   --element-color: #7b3be0;
   --white-color: #FFFFFF;
-  --transition-function: 350ms ease-out;
   --instag-color: #d87093;
   --faceb-color: #0000a3;
   --teleg-color: #3fb4fd;
   --whats-color: #03a003;
+  --transition-function: 350ms ease-out;
 }
 
 .header {
