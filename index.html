@@ -28,32 +28,34 @@
                 <span class="header__nav-item">+38 068 069 71 48</span>
             </a>
             <select class="change-lang">
-                <option value="ua">ua</option>
-                <option value="ru">ru</option>
+                <option class="change-lang-ua translate" id="ua">ua</option>
+                <option class="change-lang-ru translate" id="ru">ru</option>
             </select>
         </nav>
     </header>
+    <!-- Spinner -->
+    <div id="spinner"></div>
     <!-- Hero -->
-    <section class="hero container">
+    <section class="hero container" id="content">
         <img class="hero__img" src="./img/bg/hero-img.png" alt="flowers">
         <div class="hero__sub">
             <h1 class="hero__title"></h1>
-            <p class="hero__text">Привіт, я Юлія! Рада бачити вас на моїй сторінці. Маю великий досвід у вирощуванні 
+            <p class="hero__text lang" key="1">Привіт, я Юлія! Рада бачити вас на моїй сторінці. Маю великий досвід у вирощуванні 
                 та догляду за голоксініями. В цьому каталозі ви можете ознайомитись з моїми квітами, які я власноруч 
                 вирастила, та зробити замовлення.
             </p>
-            <button class="hero_btn" data-modal-open>Замовити</button>
+            <button class="hero_btn lang" data-modal-open key="2">Замовити</button>
         </div>
     </section>
     <!-- Catalog -->
-    <!-- <section class="catalog container">
-        <h2 class="catalog__title">Мої квіти</h2>
+    <section class="catalog container">
+        <h2 class="catalog__title lang" key="3">Мої квіти</h2>
         <ul class="catalog__list list">
             <li class="catalog__item">
                 <div class="catalog__img-over">
                     <a href="./img/photo/01.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/01.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -61,7 +63,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/02.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/02.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -69,7 +71,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/03.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/03.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -77,7 +79,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/04.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/04.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -85,7 +87,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/05.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/05.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -93,7 +95,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/06.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/06.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -101,7 +103,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/07.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/07.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -109,7 +111,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/08.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/08.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -117,7 +119,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/09.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/09.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -125,7 +127,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/10.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/10.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -133,7 +135,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/11.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/11.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -141,7 +143,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/12.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/12.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -149,7 +151,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/13.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/13.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -157,7 +159,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/14.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/14.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -165,7 +167,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/15.jpg" class="catalog__item-img-link" target="_parent">
                         <img src="./img/photo/15.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -173,7 +175,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/16.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/16.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -181,7 +183,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/17.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/17.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -189,7 +191,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/18.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/18.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -197,7 +199,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/19.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/19.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -205,7 +207,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/20.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/20.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -213,7 +215,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/21.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/21.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -221,7 +223,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/22.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/22.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -229,7 +231,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/23.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/23.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -237,7 +239,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/24.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/24.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -245,7 +247,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/25.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/25.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -253,7 +255,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/26.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/26.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -261,7 +263,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/27.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/27.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -269,7 +271,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/28.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/28.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -277,7 +279,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/29.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/29.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -285,7 +287,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/30.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/30.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -293,7 +295,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/31.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/31.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -301,7 +303,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/32.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/32.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -309,7 +311,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/33.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/33.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -317,7 +319,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/34.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/34.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -325,7 +327,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/35.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/35.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -333,7 +335,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/36.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/36.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -341,7 +343,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/37.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/37.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -349,7 +351,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/38.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/38.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -357,7 +359,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/39.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/39.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -365,7 +367,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/40.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/40.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -373,7 +375,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/41.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/41.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -381,7 +383,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/42.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/42.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -389,7 +391,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/43.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/43.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -397,7 +399,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/44.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/44.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -405,7 +407,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/45.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/45.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -413,7 +415,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/46.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/46.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -421,7 +423,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/47.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/47.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -429,7 +431,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/48.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/48.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -437,7 +439,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/49.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/49.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -445,7 +447,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/50.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/50.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -453,7 +455,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/51.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/51.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -461,7 +463,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/52.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/52.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -469,7 +471,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/53.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/53.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -477,7 +479,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/54.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/54.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -485,7 +487,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/55.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/55.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -493,7 +495,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/56.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/56.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -501,7 +503,7 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/57.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/57.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
@@ -509,13 +511,13 @@
                 <div class="catalog__img-over">
                     <a href="./img/photo/58.jpg" class="catalog__item-img-link" target="_blank">
                         <img src="./img/photo/58.jpg" alt="flower" class="catalog__item-img">
-                        <p class="overlay">Немає в наявності</p>
+                        <p class="overlay lang" key="4">Немає в наявності</p>
                     </a>
                 </div>
             </li>
             
         </ul>
-    </section> -->
+    </section>
     <!-- Footer -->
     <section class="footer container">
         <div class="footer-wrapper">
@@ -530,7 +532,7 @@
                         <svg class="footer__contact-icon" width="22" height="20">
                             <use href="./img/icons/all-social.svg#icon-location2"></use>
                         </svg>
-                        <span class="footer__contact-text">м. Харків, Україна</span>
+                        <span class="footer__contact-text lang" key="5">м. Харків, Україна</span>
                     </a>
                 </li>
                 <li class="footer__contact-item">
@@ -586,8 +588,8 @@
         </div>
         <p class="footer-copyright">© 2023 Created by Serhii Petukhov</p>
     </section>
-    <!-- Modal window -->
-<div class="backdrop is-hidden" data-modal>
+    <!-- Modal window form -->
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="form__container">
         <button type="button" class="form__modal-close-btn" data-modal-close>
             <svg class="form__modal-close-icon" width="18" height="18">
@@ -650,12 +652,45 @@
                 <div class="status"></div>
         </form>
     </div>
-</div>
+</div> -->
+    <!-- Modal window alert -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal__container">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="12" height="12">
+                    <use href="./img/icons/form.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title lang" key="6">Бажаєте замовити?</h2>
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <p class="modal__item-text lang" key="7">Напишіть мені на пошту 
+                        <a href="" class="modal__item-contact link">simonika22@ukr.net</a>
+                        , або зателефонуйте 
+                        <a href="" class="modal__item-contact link">+38 068 069 71 48</a>.
+                    </p>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__item-text lang" key="8">В листі залиште свої контактні данні: ім'я, пошту та телефон.</p>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__item-text lang" key="9">Також напишіть, що вам потрібно (квіти, чи листочки), та їх кількість.</p>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__item-text">Оплата, доставка 
+                        <a href="./conditions/conditions.txt" class="modal__item-link" target="_blank">тут</a>.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
     <button onclick="scrollToTop()" id="btnScrollToTop">🡅</button>
-    <script src="./js/topButton.js"></script>
-    <script src="./js/modalWin.js"></script>
-    <script src="./js/jquery.maskedinput.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+    <script src="./js/spinner/spinner.js"></script>
+    <script src="./js/top/topButton.js"></script>
+    <script src="./js/modal/modal.js"></script>
+    <script src="./js/lang/lang.js"></script>
+
 </body>
 </html>
