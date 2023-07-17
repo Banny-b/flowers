@@ -405,15 +405,6 @@ button {
   box-sizing: border-box;
 }
 
-form input.error {
-  border-color: red;
-  box-shadow: 0 0 5px red;
-}
-
-label.error {
-  display: none !important;
-}
-
 .form__field-message {
   width: 260px;
   height: 100px;
