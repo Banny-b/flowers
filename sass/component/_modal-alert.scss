@@ -1,32 +1,16 @@
 .modal__container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 100px;
-    width: 500px;
-    height: 380px;
+    max-width: 500px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     padding: 25px 25px 20px 40px;
     background: var(--white-color);
     border-radius: 10px;
     box-shadow: 0 0 6px var(--white-color);
-}
-
-.modal-close-btn {
-    position: relative;
-    top: 0;
-    left: 470px;
-    color: var(--text-color);
-    background: transparent;
-    border: 1px solid var(--text-color);
-    border-radius: 50%;
-    padding: 2px 6px;
-    transition: var(--transition-function);
-
-    &:hover {
-        fill: var(--link-hover-color);
-        border-color: var(--link-hover-color);
-        box-shadow: 0 0 2px var(--link-hover-color);
-    }
 }
 
 .modal__title {
@@ -71,5 +55,35 @@
 
     &:hover {
         color: var(--link-hover-color);
+    }
+}
+
+.modal-close-btn {
+    fill: var(--main-color);
+    border: none;
+    background: transparent;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: var(--transition-function);
+
+    &:hover {
+        fill: var(--link-hover-color);
+    }
+}
+
+// Pulsating icon
+.modal-close-icon {
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }

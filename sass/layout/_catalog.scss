@@ -1,12 +1,11 @@
 .catalog {
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
 }
 
 .catalog__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
 }
 
 .catalog__title {
@@ -57,4 +56,20 @@
     color: var(--white-color);
     background-color: var(--bg-overlay);
     transition: var(--transition-function);
+}
+
+@media screen and (min-width: 320px) {
+    .catalog__list {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .catalog__list {
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
 }

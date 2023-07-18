@@ -17,6 +17,7 @@
     <header class="header container">
         <img class="header__logo" src="./img/logo/logo.png" alt="logo">
         <nav class="header__nav">
+            <div class="header__nav-contact">
             <a href="mailto:simonika22@ukr.net" class="header__nav-link link">
                 <svg class="header__nav-icon" width="24" height="18">
                     <use href="./img/icons/form.svg#icon-envelope"></use>
@@ -29,9 +30,10 @@
                 </svg>
                 <span class="header__nav-item">+38 068 069 71 48</span>
             </a>
+            </div>
             <select class="change-lang">
-                <option class="change-lang translate" id="ua" lang="en">ua</option>
-                <option class="change-lang translate" id="ru" lang="en">ru</option>
+                <option class="lang-ua translate" id="ua" lang="en">ua</option>
+                <option class="lang-ru translate" id="ru" lang="en">ru</option>
             </select>
         </nav>
     </header>
@@ -39,6 +41,7 @@
     <div id="spinner"></div>
     <!-- Hero -->
     <section class="hero container" id="content">
+        <div class="hero__wrapper">
         <img class="hero__img" src="./img/bg/hero-img.png" alt="flowers">
         <div class="hero__sub">
             <h1 class="hero__title"></h1>
@@ -47,6 +50,7 @@
                 вирастила, та зробити замовлення.
             </p>
             <button class="hero_btn lang" data-modal-open key="2">Замовити</button>
+        </div>
         </div>
     </section>
     <!-- Catalog -->
@@ -656,11 +660,6 @@
     <!-- Modal window alert -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal__container">
-            <button type="button" class="modal-close-btn" data-modal-close>
-                <svg class="modal-close-icon" width="12" height="12">
-                    <use href="./img/icons/form.svg#icon-close-modal"></use>
-                </svg>
-            </button>
             <h2 class="modal__title lang" key="6">Бажаєте замовити?</h2>
             <ul class="modal__list">
                 <li class="modal__item">
@@ -685,6 +684,11 @@
                     </p>
                 </li>
             </ul>
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="30" height="30">
+                    <use href="./img/icons/form.svg#icon-happy"></use>
+                </svg>
+            </button>
         </div>
     </div>
     <button onclick="scrollToTop()" id="btnScrollToTop">🡅</button>
