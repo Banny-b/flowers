@@ -1,2 +1,2 @@
 # flowers
-Flowers Catalog
+Flowers Catalog.

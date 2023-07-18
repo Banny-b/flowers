@@ -185,7 +185,7 @@ button {
 }
 .hero {
   display: flex;
-  background-image: url("../img/bg/hero-bg.jpg");
+  background-image: url("../img/hero/bg/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -602,7 +602,7 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 100px;
+  top: 50px;
   max-width: 500px;
   height: auto;
   margin-right: auto;
@@ -684,22 +684,22 @@ button {
     transform: scale(1);
   }
 }
-#btnScrollToTop {
+.top {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 13px;
   z-index: 5;
-  font-size: 28px;
+  font-size: 10px;
   border: none;
   outline: none;
   background-color: var(--copyr-color);
   color: var(--white-color);
   cursor: pointer;
-  padding: 8px 13px;
+  padding: 16px 8px;
   border-radius: 50%;
   transition: var(--function-transition);
 }
-#btnScrollToTop:hover {
+.top:hover {
   background-color: var(--text-color);
 }/*# sourceMappingURL=main.css.map */
