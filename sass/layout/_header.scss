@@ -43,4 +43,9 @@
     color: var(--main-color);
     border-color: var(--main-color);
     border-radius: 2px;
+
+    &:hover {
+        color: var(--link-hover-color);
+        border-color: var(--link-hover-color);
+    }
 }

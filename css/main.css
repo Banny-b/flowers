@@ -126,6 +126,10 @@ button {
   border-color: var(--main-color);
   border-radius: 2px;
 }
+.change-lang:hover {
+  color: var(--link-hover-color);
+  border-color: var(--link-hover-color);
+}
 
 .hero {
   display: flex;

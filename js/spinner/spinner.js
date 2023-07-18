@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
 
 //     setTimeout(function() {
 //         const content = document.getElementById('content');
-//         spinnerContainer.style.display = 'none';
+//         spinnerContainer.style.display = 'none'; // hidden spinner
 //         content.style.display = 'block';
 //     }, 3000); // 3 second delay
 // });
