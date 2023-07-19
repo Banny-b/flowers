@@ -106,6 +106,7 @@ button {
   width: 50px;
   height: 25px;
   color: var(--main-color);
+  background: var(--white-color);
   border-color: var(--main-color);
   border-radius: 2px;
 }
@@ -607,7 +608,7 @@ button {
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  padding: 25px 25px 20px 40px;
+  padding: 25px 25px 25px 40px;
   background: var(--white-color);
   border-radius: 10px;
   box-shadow: 0 0 6px var(--white-color);
@@ -657,20 +658,26 @@ button {
 }
 
 .modal-close-btn {
-  fill: var(--main-color);
-  border: none;
+  font-family: var(--accent-font);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--main-color);
   background: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
+  padding: 2px 8px;
   transition: var(--transition-function);
 }
 .modal-close-btn:hover {
-  fill: var(--link-hover-color);
+  color: var(--link-hover-color);
+  border: 1px solid var(--link-hover-color);
 }
 
-.modal-close-icon {
-  animation: pulse 1.5s infinite;
+.modal-close-btn {
+  animation: pulse 3.6s infinite;
 }
 
 @keyframes pulse {
@@ -690,13 +697,13 @@ button {
   bottom: 20px;
   right: 13px;
   z-index: 5;
-  font-size: 18px;
+  font-size: 14px;
   border: none;
   outline: none;
-  background-color: var(--copyr-color);
+  background-color: var(--bg-overlay);
   color: var(--white-color);
   cursor: pointer;
-  padding: 20px 8px;
+  padding: 18px 8px;
   border-radius: 50%;
   transition: var(--function-transition);
 }
