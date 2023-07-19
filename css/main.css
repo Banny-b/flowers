@@ -173,7 +173,6 @@ button {
   .header__nav-contact {
     display: flex;
     align-items: center;
-    max-width: 370px;
     margin-right: 30px;
   }
   .change-lang {
@@ -187,9 +186,6 @@ button {
   }
   .header__nav {
     padding-right: 50px;
-  }
-  .header__nav-contact {
-    max-width: 430px;
   }
   .header__nav-link {
     font-size: 20px;
