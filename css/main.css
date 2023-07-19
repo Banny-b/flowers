@@ -129,6 +129,7 @@ button {
   }
   .header__nav-contact {
     max-width: 154px;
+    padding-left: 5px;
   }
   .header__nav-link {
     display: inline-block;
