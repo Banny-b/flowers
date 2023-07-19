@@ -126,9 +126,10 @@ button {
   .header__nav {
     display: flex;
     flex-direction: row;
+    padding-right: 14px;
   }
   .header__nav-contact {
-    width: 150px;
+    min-width: 145px;
     padding-left: 5px;
   }
   .header__nav-link {
